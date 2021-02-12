@@ -1,11 +1,5 @@
-const { fstat } = require('fs')
+const getNotes = require('./notes.js')
 
-const fs = require('fs');
+const result = getNotes('just test notes');
 
-
-//* Writing in .TXT file
-fs.writeFileSync('notes.txt', 'My name is Thiago');
-console.log("File contents before append: ", fs.readFileSync('notes.txt', 'utf8'));
-
-fs.appendFileSync('notes.txt', ' Negreiros');
-console.log('File contents after append: ',fs.readFileSync('notes.txt','utf8'));
+console.log(result);
