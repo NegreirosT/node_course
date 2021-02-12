@@ -1,0 +1,10 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Thiago Negreiros",
+  "license": "MIT",
+  "dependencies": {
+    "validator": "10.8.0"
+  }
+}
