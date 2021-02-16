@@ -7,6 +7,5 @@ const validateEmail = (email) => {
           console.log(chalk.bgRed('Wrong!'));
 }
 
-
 validateEmail('thiago@thiago.com.br');
 validateEmail('thiago.com.br');
