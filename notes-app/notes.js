@@ -1,5 +1,5 @@
-const fs = require('fs');
-const { array } = require('yargs');
+const fs    = require('fs');
+const chalk = require('chalk');
 
 const getNotes = (notes) => {
   return 'Your notes is: '+ notes;
@@ -46,7 +46,12 @@ const removeNotes = (title) => {
     return note.title !== title
   }) 
 
-  saveNotes(notesToKeep);
+  if(notes.length > notesToKeep.length){
+    console.log(chalk.green.inverse('Note removed!'));
+    saveNotes(notesToKeep);
+  }else{
+    console.log(chalk.red.inverse('No note found!'));
+  }
 }
 
 module.exports = {
