@@ -11,7 +11,7 @@ yargs.command({
   builder: {
     title: {
       describe: 'Note title',
-      demandOption: true, //? Faz o argumento ser obrigatorio
+      demandOption: true, //? Faz o argumento ser obrigatório
       type: 'string'
     },
     body: {
