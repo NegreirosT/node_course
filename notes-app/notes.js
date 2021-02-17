@@ -50,8 +50,17 @@ const removeNotes = (title) => {
   }
 }
 
+const listNotes = () => {
+  const listNotes = loadNotes();
+
+  listNotes.forEach(note => {
+    console.log(chalk.yellow('Your notes: '),chalk.red.underline(note.title));
+  });
+}
+
 module.exports = {
   getNotes: getNotes,
   addNotes: addNotes,
-  removeNotes: removeNotes
+  removeNotes: removeNotes,
+  listNotes: listNotes
 };
