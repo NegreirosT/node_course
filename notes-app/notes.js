@@ -56,7 +56,7 @@ const readNotes = (title) => {
 
   if(findNote){
     console.log('Title: '+ chalk.yellow.underline(findNote.title));
-    console.log('Body: '+ chalk.yellow.underline(findNote.body));
+    console.log('Body: '+ chalk.blue.underline(findNote.body));
   }else{
     console.log(chalk.inverse.red('Note not found!'))
   }
