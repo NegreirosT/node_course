@@ -54,7 +54,10 @@ const listNotes = () => {
   const listNotes = loadNotes();
 
   listNotes.forEach(note => {
-    console.log(chalk.yellow('Your notes: '),chalk.red.underline(note.title));
+    console.log(
+      chalk.yellow('Your notes: '),
+      chalk.red.underline(note.title)
+    );
   });
 }
 
